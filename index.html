@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STEVEN AI | ULTIMATE LAB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-overlay"></div>
+
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">STEVEN AI</div>
+            <nav class="sidebar-nav">
+                <div class="nav-item">📁 Proyek</div>
+                <div class="nav-item">🖼️ Gambar</div>
+            </nav>
+            <div class="section-title">Terkini</div>
+            <div id="chat-history-list" class="history-list"></div>
+            <button class="new-chat-pill" onclick="createNewChat()">
+                <span>✏️</span> Obrolan Baru
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <!-- Header baris hitam telah dihapus dari sini -->
+            <div class="lab-card">
+                <div id="display-output" class="chat-area">
+                    <div class="initial-name-container">
+                        <div id="title-wrapper">
+                            <h1 id="chat-title-display" onclick="enableRenameMode()">INITIALIZING...</h1>
+                            <input type="text" id="chat-title-input" class="title-rename-capsule" style="display: none;">
+                        </div>
+                        <p class="subtitle">Ketuk judul untuk mengubah identitas lab</p>
+                    </div>
+                    <div id="chat-messages"></div>
+                </div>
+                
+                <div class="input-container">
+                    <div class="input-pill">
+                        <span class="plus-icon">+</span>
+                        <input type="text" id="ai-input" placeholder="Tanya STEVEN AI..." autofocus>
+                        <div class="mic-icon">🎤</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>
